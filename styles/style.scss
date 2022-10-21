@@ -10,6 +10,7 @@ $textColorSec : #fff;
 @import './shop';
 @import './blog';
 @import './footer';
+
 *{
     margin: 0;
     padding: 0;
@@ -24,4 +25,27 @@ html{
 .container{
     width: 100%;
     padding: 1rem 3rem;
+}
+
+.banner-title{
+    width: 100%;
+    height: 70vh;
+    background: url('../img/background3.png') no-repeat  bottom scroll;
+    background-size: cover;
+
+    .titles{
+        height: 70vh;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        color: $textColorSec;
+        h1{
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+    }
 }

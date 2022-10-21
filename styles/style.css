@@ -90,6 +90,91 @@ nav .icons-container i:hover {
     transform: translateY(0%);
   }
 }
+.contact-section {
+  padding: 6rem 0;
+}
+.contact-section .contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.contact-section .contact h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-section .contact .contact-left {
+  flex: 1;
+}
+.contact-section .contact .contact-left p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+.contact-section .contact .contact-left form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.contact-section .contact .contact-left form .fullname {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-section .contact .contact-left form .fullname input {
+  width: 48%;
+}
+.contact-section .contact .contact-left form input, .contact-section .contact .contact-left form textarea {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+}
+.contact-section .contact .contact-left .cta {
+  padding: 1rem 2.5rem;
+  background-color: #BE7200;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.contact-section .contact .contact-left .cta:hover {
+  background: #fff;
+  color: #BE7200;
+  border: 1px solid #BE7200;
+}
+.contact-section .contact .contact-left .social-links {
+  margin-top: 3rem;
+}
+.contact-section .contact .contact-left .social-links p {
+  margin-top: 2rem;
+}
+.contact-section .contact .contact-left .social-links p i {
+  margin-right: 3rem;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+.contact-section .contact .contact-left .social-links p i:hover {
+  color: #BE7200;
+}
+.contact-section .contact .contact-right {
+  flex: 1;
+}
+.contact-section .contact .contact-right iframe {
+  width: 100%;
+  height: 30rem;
+}
+.contact-section .contact .contact-right .contact-info {
+  margin-top: 2rem;
+}
+.contact-section .contact .contact-right .contact-info p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .contact {
+    flex-direction: column;
+  }
+}
 main {
   background: url("../img/Background.png") no-repeat scroll;
   background-size: cover;
@@ -285,6 +370,52 @@ main .hero .right img {
     max-width: 100%;
   }
 }
+.posts {
+  padding: 6rem 0;
+}
+.posts h2 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.posts .blog-posts {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.posts .blog-posts .blog-post {
+  width: 35rem;
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+.posts .blog-posts .blog-post:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px rgba(45, 45, 45, 0.3058823529);
+}
+.posts .blog-posts .blog-post img {
+  width: 100%;
+}
+.posts .blog-posts .blog-post h3 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.posts .blog-posts .blog-post .post-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.posts .blog-posts .blog-post .post-info p {
+  color: #2d2d2d;
+}
+.posts .blog-posts .blog-post .post-body {
+  margin-top: 1rem;
+  color: #2d2d2d;
+  font-size: 1.2rem;
+}
+
 footer {
   background-color: #E1E1E1;
   min-width: 100%;
@@ -394,4 +525,26 @@ html {
 .container {
   width: 100%;
   padding: 1rem 3rem;
+}
+
+.banner-title {
+  width: 100%;
+  height: 70vh;
+  background: url("../img/background3.png") no-repeat bottom scroll;
+  background-size: cover;
+}
+.banner-title .titles {
+  height: 70vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #fff;
+}
+.banner-title .titles h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.banner-title .titles p {
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */

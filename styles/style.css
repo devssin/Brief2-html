@@ -60,6 +60,44 @@ nav .icons-container i:hover {
   color: #BE7200;
 }
 
+.search-bar {
+  background: #000000;
+  padding: 0 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-120%);
+  height: 0;
+  transition: all 1s ease;
+  opacity: 0;
+}
+.search-bar .input i {
+  font-size: 1.6rem;
+}
+.search-bar .input input {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+.search-bar .close {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.open {
+  transform: translateY(0);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem 3rem;
+  opacity: 1;
+}
+
 @media only screen and (max-width: 700px) {
   .nav-links {
     flex-direction: column;
@@ -368,6 +406,190 @@ main .hero .right img {
 @media screen and (max-width: 458px) {
   .img-container img {
     max-width: 100%;
+  }
+}
+.new-arrivals-section {
+  padding: 6rem 0;
+}
+.new-arrivals-section h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.new-arrivals-section .new-arrivals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.new-arrivals-section .new-arrivals .prodcut {
+  width: 22rem;
+  text-align: center;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper {
+  width: 100%;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.0274509804);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper img {
+  width: 10rem;
+  transition: all 0.4s ease;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper .actions {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transform: translateY(50%);
+  transition: all 0.3s ease-in-out;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper .actions .add2cart {
+  display: flex;
+  align-items: center;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper .actions .add2cart i {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper .actions .more i {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper:hover .overlay {
+  transform: scale(1);
+  opacity: 1;
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper:hover img {
+  transform: scale(1.1);
+}
+.new-arrivals-section .new-arrivals .prodcut .product-img-wrapper:hover .actions {
+  visibility: visible;
+  transform: translateY(0);
+}
+.new-arrivals-section .new-arrivals .prodcut h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+.new-arrivals-section .new-arrivals .prodcut h5:hover {
+  color: #BE7200;
+  cursor: pointer;
+}
+.new-arrivals-section .new-arrivals .prodcut p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.banner-section {
+  background-image: url("../img/Background4.png");
+  background-size: cover;
+}
+.banner-section .banner {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-section .banner p {
+  width: 70%;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.banner-section .banner .cta {
+  padding: 1rem 2.5rem;
+  background-color: #BE7200;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.banner-section .banner .cta:hover {
+  background: #fff;
+  color: #BE7200;
+  border: 1px solid #BE7200;
+}
+
+.features-section {
+  padding: 6rem 0;
+}
+.features-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-section .features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.features-section .features .feature {
+  width: 25rem;
+  padding: 1rem;
+  transition: all 0.5s ease-out;
+}
+.features-section .features .feature:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1568627451);
+}
+.features-section .features .feature img {
+  width: 100%;
+  height: 26rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.features-section .features .feature .rating-reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.features-section .features .feature .rating-reviews i {
+  color: #BE7200;
+}
+.features-section .features .feature .rating-reviews .last {
+  color: #969696;
+}
+.features-section .features .feature h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+.features-section .features .feature p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 560px) {
+  .new-arrivals {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .posts {

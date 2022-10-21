@@ -63,6 +63,53 @@ nav {
   }
 }
 
+.search-bar{
+  background: $textColorPrimary;
+  padding: 0 3rem;
+  color: $textColorSec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-120%);
+  height: 0;
+  transition: all 1s ease;
+  opacity: 0;
+
+  .input{
+
+    i{
+      font-size: 1.6rem;
+
+    }
+    input{
+      padding: 1rem;
+      background-color: transparent;
+      border: none;
+      font-size: 1.6rem;
+      color: $textColorSec;
+      margin-left: 1rem;
+    }
+  }
+
+  .close{
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+
+}
+
+.open{
+  transform: translateY(0);
+  height: fit-content;
+  padding: 2rem 3rem;
+  opacity: 1;
+}
+
+
+
+
 @media only screen and(max-width: 700px){
     .nav-links{
         flex-direction: column;

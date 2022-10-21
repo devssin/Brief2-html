@@ -84,7 +84,7 @@ nav .icons-container i:hover {
   color: #fff;
   margin-left: 1rem;
 }
-.search-bar .close {
+.search-bar .close-container {
   font-size: 1.6rem;
   cursor: pointer;
 }

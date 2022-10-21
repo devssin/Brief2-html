@@ -1,6 +1,7 @@
 const nav = document.querySelector(".nav-links")
 const burger = document.querySelector('.burger')
-const close = document.querySelector('.close')
+const closeNav = document.querySelector('.close')
+console.log(closeNav)
 
 const btnSearch = document.querySelector('.search')
 const searchBar = document.querySelector('.search-bar')
@@ -10,7 +11,7 @@ burger.addEventListener('click' , () => {
     nav.classList.add('show')
 })
 
-close.addEventListener('click', () => {
+closeNav.addEventListener('click', () => {
     nav.classList.remove('show')
 
 })
